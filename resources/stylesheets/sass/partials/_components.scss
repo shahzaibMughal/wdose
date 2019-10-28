@@ -11,6 +11,10 @@
 a{
     text-decoration: none;
     color: $primary-color;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .btn{
@@ -33,3 +37,54 @@ a{
 
 }
 
+
+
+
+
+.heading{
+    font-size: 1.8em;
+    text-align: center;
+    margin: gap(5) 0;
+    &:before{
+        content: "";
+        width: 18px;
+        height: 18px;
+        /* background: red; */
+        display: inline-block;
+        background-size: 18px 18px;
+        background-image: url(/resources/images/stars.svg);
+        background-repeat: no-repeat;
+        margin: 0 gap(1);
+    }
+    &:after{
+        content: "";
+        width: 18px;
+        height: 18px;
+        margin: 0 gap(1);
+        /* background: red; */
+        display: inline-block;
+        background-size: 18px 18px;
+        transform: scale(-1,-1);
+        background-image: url(/resources/images/stars.svg);
+        background-repeat: no-repeat;
+    }
+
+
+    @media  (min-width: 319px){
+        font-size: 2.2em;
+    }
+    @media  (min-width: 631px){
+        font-size: 3em;
+        &:before{
+            width: 30px;
+            height: 30px;
+            background-size: 30px 30px;
+        }
+        &:after{
+            width: 30px;
+            height: 30px;
+            background-size: 30px 30px;
+        }
+    }
+
+}

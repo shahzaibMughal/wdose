@@ -40,8 +40,8 @@
 
 
         <!-- Main Nav ( Sticky + Drawer ) -->
-        <div class="container">
-            <nav  class="main-nav" >
+        <div class="nav-container  ">
+            <nav  class="main-nav " >
                 <span id="nav_close_btn"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z"/></svg></span>
                 <div class="search-box-container">
                     <input id="search_input" v-model="searchQuery" class="search-input" type="text"
@@ -92,52 +92,44 @@
 
     <!-- Categories Bar -->
     <div class="categories owl-carousel">
-         <span class="category"
-               style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 1</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 2</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 3</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 4</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 5</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 6</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 7</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 8</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 9</a>
-         </span>
-            <span class="category"
-                  style=" background-image: url('https://picsum.photos/193/62')">
-                <a class="category-link" href="#">Category 10</a>
-         </span>
+         <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+                <span class="category-link" >Category 1</span>
+         </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 2</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 3</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 4</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 5</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 6</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 7</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 8</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 9</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 10</span>
+        </a>
+        <a href="categories.html" class="category" style=" background-image: url('https://picsum.photos/193/62')">
+            <span class="category-link" >Category 11</span>
+        </a>
     </div>
-
 
     <!-- Grid   -->
     <ul class="grid effect-2" id="grid">
-        <li><a href="#"><img  src="resources/images/temp-images/1.jpg" alt="Lorem ipsum"></a></li>
+        <li><a href="categories.html"><img  src="resources/images/temp-images/1.jpg" alt="Lorem ipsum"></a></li>
         <li><a href="#"><img  src="resources/images/temp-images/2.jpg" alt="Lorem ipsum"></a></li>
         <li><a href="#"><img  src="resources/images/temp-images/3.jpg" alt="Lorem ipsum"></a></li>
         <li><a href="#"><img  src="resources/images/temp-images/4.jpg" alt="Lorem ipsum"></a></li>
@@ -151,24 +143,61 @@
         <li><a href="#"><img  src="resources/images/temp-images/12.png" alt="Lorem ipsum"></a></li>
         <li><a href="#"><img  src="resources/images/temp-images/13.png" alt="Lorem ipsum"></a></li>
         <li><a href="#"><img  src="resources/images/temp-images/14.png" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/1.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/2.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/3.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/4.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/5.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/6.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/7.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/8.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/9.jpg" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/10.png" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/11.png" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/12.png" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/13.png" alt="Lorem ipsum"></a></li>
-        <li><a href="#"><img  src="resources/images/temp-images/14.png" alt="Lorem ipsum"></a></li>
+<!--        <li><a href="#"><img  src="resources/images/temp-images/1.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/3.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/4.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/5.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/6.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/7.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/8.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/9.jpg" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/10.png" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/11.png" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/12.png" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/13.png" alt="Lorem ipsum"></a></li>-->
+<!--        <li><a href="#"><img  src="resources/images/temp-images/14.png" alt="Lorem ipsum"></a></li>-->
     </ul>
 
+    <a href="#" class="btn">All Quotes</a>
 
 
+    <footer>
+        <h2 class="heading">WisdomDose</h2>
+        <div class="footer-links">
+            <div>
+                <h4 >Quick Links</h4>
+                <ul>
+                    <li><a href="#">All Quotes</a></li>
+                    <li><a href="#">Popular Quotes</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Authors</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Popular Categories</h4>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                    <li><a href="#">Category 4</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Popular Authors</h4>
+                <ul>
+                    <li><a href="#">Author 1</a></li>
+                    <li><a href="#">Author 2</a></li>
+                    <li><a href="#">Author 3</a></li>
+                    <li><a href="#">Author 4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="#">Privay Policy </a>
+            <span>&copy;Copyright By WisdomDose.com</span>
+        </div>
+
+    </footer>
 
 
 

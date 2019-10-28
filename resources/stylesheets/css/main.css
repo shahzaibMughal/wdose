@@ -11,6 +11,8 @@
 a {
   text-decoration: none;
   color: #ef4036; }
+  a:hover {
+    text-decoration: underline; }
 
 .btn {
   padding: 12px 32px;
@@ -26,9 +28,50 @@ a {
   outline: none;
   cursor: pointer; }
   .btn:active {
-    background: black; }
+    background: black;
+    transform: scale(0.9); }
   .btn:hover {
     background: #e01d12; }
+
+.heading {
+  font-size: 1.8em;
+  text-align: center;
+  margin: 40px 0; }
+  .heading:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    /* background: red; */
+    display: inline-block;
+    background-size: 18px 18px;
+    background-image: url(/resources/images/stars.svg);
+    background-repeat: no-repeat;
+    margin: 0 8px; }
+  .heading:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin: 0 8px;
+    /* background: red; */
+    display: inline-block;
+    background-size: 18px 18px;
+    transform: scale(-1, -1);
+    background-image: url(/resources/images/stars.svg);
+    background-repeat: no-repeat; }
+  @media (min-width: 319px) {
+    .heading {
+      font-size: 2.2em; } }
+  @media (min-width: 631px) {
+    .heading {
+      font-size: 3em; }
+      .heading:before {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px; }
+      .heading:after {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px; } }
 
 html, body {
   margin: 0;
@@ -75,7 +118,7 @@ header {
   position: relative;
   z-index: 100; }
 
-.main-nav, .main-nav .container {
+.main-nav, .main-nav .nav-container {
   z-index: 1000; }
 
 #nav_open_btn .icon {
@@ -164,6 +207,10 @@ header {
     .main-nav .social-nav svg {
       padding: 1.6px;
       fill: rgba(0, 0, 0, 0.7); }
+  .main-nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0; }
 
 /*** Sticky Nav for desktop */
 @media (max-width: 766px) {
@@ -223,7 +270,7 @@ header {
   header {
     margin-bottom: 40px; }
 
-  .container {
+  .nav-container {
     width: 100%;
     background: #fff;
     align-self: flex-end;
@@ -290,6 +337,18 @@ header {
 @media (min-width: 1023px) {
   .quote-container .quote-string {
     font-size: 2.2em; } }
+/*******************
+    nav for other pages, (other than home)
+********************/
+.sticky-nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 16px 0; }
+  .sticky-nav #nav_open_btn svg {
+    fill: rgba(0, 0, 0, 0.7); }
+
 /************************
         Categories
 *************************/
@@ -313,6 +372,11 @@ header {
     left: 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1; }
+  .categories.owl-carousel .category:hover:after, .categories.owl-carousel .category:active:after {
+    width: 100%;
+    height: 100%;
+    background: #ef4036;
+    z-index: 1; }
   .categories.owl-carousel .category .category-link {
     text-decoration: none;
     color: #fff;
@@ -326,7 +390,7 @@ header {
 .grid {
   max-width: 1000px;
   list-style: none;
-  margin: 30px auto;
+  margin: 32px auto 80px auto;
   padding: 0; }
 
 .grid li {
@@ -349,7 +413,11 @@ header {
   border: none;
   display: block;
   border-radius: 8px;
-  max-width: 100%; }
+  max-width: 100%;
+  transition: opacity 100ms linear; }
+  .grid li a:hover,
+  .grid li img:hover {
+    opacity: 0.8; }
 
 /* Effect 2: Move Up */
 .grid.effect-2 li.animate {
@@ -373,5 +441,121 @@ header {
 @media screen and (max-width: 400px) {
   .grid li {
     width: 100%; } }
+/************************
+        Footer
+*************************/
+footer {
+  background-color: #191919;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0; }
+  footer .heading {
+    font-size: 1.6em; }
+    footer .heading:before {
+      width: 18px;
+      height: 18px;
+      background-size: 18px 18px; }
+    footer .heading:after {
+      width: 18px;
+      height: 18px;
+      background-size: 18px 18px; }
+    @media (min-width: 300px) {
+      footer .heading {
+        font-size: 1.8em; }
+        footer .heading:before {
+          width: 24px;
+          height: 24px;
+          background-size: 24px 24px; }
+        footer .heading:after {
+          width: 24px;
+          height: 24px;
+          background-size: 24px 24px; } }
+    @media (min-width: 500px) {
+      footer .heading {
+        font-size: 2.5em; }
+        footer .heading:before {
+          width: 40px;
+          height: 40px;
+          background-size: 40px 40px; }
+        footer .heading:after {
+          width: 40px;
+          height: 40px;
+          background-size: 40px 40px; } }
+    @media (min-width: 1000px) {
+      footer .heading {
+        font-size: 2.8em; }
+        footer .heading:before {
+          width: 40px;
+          height: 40px;
+          background-size: 40px 40px; }
+        footer .heading:after {
+          width: 40px;
+          height: 40px;
+          background-size: 40px 40px; } }
+  footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 16px 0;
+    max-width: 1000px; }
+    footer .footer-links h4 {
+      font-size: 1.2em;
+      margin-bottom: 0; }
+    footer .footer-links a {
+      color: #fff; }
+  footer .copyright {
+    text-align: center; }
+
+/************************
+     Categories Grid
+*************************/
+.content {
+  margin: 64px 0; }
+
+.categories-grid {
+  display: grid;
+  margin: 40px auto;
+  grid-template-columns: repeat(auto-fit, 200px);
+  max-width: 1000px;
+  grid-gap: 16px;
+  align-items: center;
+  justify-content: center; }
+  .categories-grid .category {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .categories-grid .category:after {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      border-radius: 8px;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1; }
+    .categories-grid .category:hover:after, .categories-grid .category:active:after {
+      width: 100%;
+      height: 100%;
+      background: #ef4036;
+      z-index: 1; }
+    .categories-grid .category .category-link {
+      font-size: 1.5em;
+      color: #fff;
+      position: relative;
+      z-index: 10; }
 
 /*# sourceMappingURL=main.css.map */
