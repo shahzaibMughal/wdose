@@ -1,0 +1,40 @@
+
+
+// this file contains all variables, functions & mixins
+
+
+// colors
+$primary-color : #ef4036;
+$black : #191919;
+$white : #fff;
+$grey: rgba(black,0.7);
+
+
+//font weight
+$font-light : 400;
+$font-medium : 600;
+$font-bold : 800;
+
+@function gap($x: 8px){
+    @return $x * 8px;
+}
+
+@mixin shadow($h-offset: 1px, $v-offset: 1px, $radius: 2px){
+    box-shadow: $h-offset $v-offset $radius rgba(black,0.2);
+}
+
+
+@mixin onclickScaleDownEffect(){
+    &:active {
+        transform: scale(0.9);
+        fill: $primary-color;
+    }
+}
+
+@mixin onclickBtnEffect(){
+    &:active {
+        background: black;
+    }
+}
+
+
