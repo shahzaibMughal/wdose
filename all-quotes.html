@@ -5,8 +5,7 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Wisdom Dose</title>
-
+        <title>All Quotes</title>
         <script src="vendor/mansonry-grid/modernizr.custom.js"></script>
         <link rel="stylesheet" href="./vendor/owl-carousel/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="./resources/stylesheets/css/main.css">
@@ -16,50 +15,37 @@
     </head>
     <body>
 
-    <!-- Header -->
-    <header id="header" style="background-image: url('https://picsum.photos/685/400')">
-        <span id="nav_open_btn"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                                          viewBox="0 0 512 512"><path
+    <!-- Main Nav ( Sticky + Drawer ) -->
+    <nav>
+        <div class="sticky-nav">
+            <span id="nav_open_btn"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 512 512"><path
                     d="M417.4 224H94.6C77.7 224 64 238.3 64 256s13.7 32 30.6 32h322.8c16.9 0 30.6-14.3 30.6-32s-13.7-32-30.6-32zM417.4 96H94.6C77.7 96 64 110.3 64 128s13.7 32 30.6 32h322.8c16.9 0 30.6-14.3 30.6-32s-13.7-32-30.6-32zM417.4 352H94.6C77.7 352 64 366.3 64 384s13.7 32 30.6 32h322.8c16.9 0 30.6-14.3 30.6-32s-13.7-32-30.6-32z"/></svg></span>
-        <img class="logo" src="resources/images/logo_white.svg" alt="Wisdom Dose Logo">
-        <div></div><!-- Flex box fix, to bring logo in center   -->
+            <img class="logo" src="resources/images/logo_black.svg" alt="Wisdom Dose Logo">
+            <div></div><!-- Flex box fix, to bring logo in center   -->
 
-
-        <!-- Quote of the day -->
-        <div class="quote-container">
-            <div class="quote">
-                <h2 class="quote-string">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, officia.
-                </h2>
-                <div class="quote-meta">
-                    <p class="tag">#QuoteOfTheDay</p>
-                    <p class="author"><a href="#">Shahzaib Zaheer</a></p>
-                </div>
-            </div>
         </div>
-
-
         <!-- Main Nav ( Sticky + Drawer ) -->
-        <div class="nav-container  ">
+        <div class="nav-container ">
             <nav  class="main-nav " >
                 <span id="nav_close_btn"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z"/></svg></span>
                 <div class="search-box-container">
                     <input id="search_input" v-model="searchQuery" class="search-input" type="text"
                            placeholder="Search">
                     <span  @click="handleSearchBox"><svg id="search_btn"  class="icon" xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 500 500">
-                            <path fill="none" d="M-1-1h582v402H-1z"/>
-                            <g>
-                                <path stroke="null" fill-rule="evenodd"
-                                      d="M311.126 144.023c21.797 5.046 39.139 23.609 44.184 43.891 1.722 9.484 9.992 16.646 19.883 16.646 11.095 0 20.175-9.078 20.175-20.178 0-14.529-12.205-36.625-28.856-53.173-16.346-16.143-35.817-27.543-51.856-27.543-11.095 0-20.18 9.384-20.18 20.485-.001 9.882 7.163 18.158 16.65 19.872zM33.762 408.573c-15.647 15.636-15.647 41.066 0 56.702 15.636 15.65 41.068 15.65 56.597 0l115.93-115.83c27.037 16.859 58.926 26.642 93.23 26.642 97.567 0 176.567-79.004 176.567-176.57 0-97.564-79-176.568-176.566-176.568s-176.567 79.004-176.567 176.567c0 34.206 9.794 66.194 26.643 93.231L33.762 408.573zM173.4 199.516c0-69.615 56.498-126.12 126.12-126.12s126.12 56.505 126.12 126.12c0 69.623-56.499 126.12-126.12 126.12S173.4 269.14 173.4 199.516z"
-                                      clip-rule="evenodd"/>
-                            </g>
-                        </svg></span>
+                                                         viewBox="0 0 500 500">
+                                        <path fill="none" d="M-1-1h582v402H-1z"/>
+                                        <g>
+                                            <path stroke="null" fill-rule="evenodd"
+                                                  d="M311.126 144.023c21.797 5.046 39.139 23.609 44.184 43.891 1.722 9.484 9.992 16.646 19.883 16.646 11.095 0 20.175-9.078 20.175-20.178 0-14.529-12.205-36.625-28.856-53.173-16.346-16.143-35.817-27.543-51.856-27.543-11.095 0-20.18 9.384-20.18 20.485-.001 9.882 7.163 18.158 16.65 19.872zM33.762 408.573c-15.647 15.636-15.647 41.066 0 56.702 15.636 15.65 41.068 15.65 56.597 0l115.93-115.83c27.037 16.859 58.926 26.642 93.23 26.642 97.567 0 176.567-79.004 176.567-176.57 0-97.564-79-176.568-176.566-176.568s-176.567 79.004-176.567 176.567c0 34.206 9.794 66.194 26.643 93.231L33.762 408.573zM173.4 199.516c0-69.615 56.498-126.12 126.12-126.12s126.12 56.505 126.12 126.12c0 69.623-56.499 126.12-126.12 126.12S173.4 269.14 173.4 199.516z"
+                                                  clip-rule="evenodd"/>
+                                        </g>
+                                    </svg></span>
                 </div>
                 <ul class="main-nav-items">
-                    <li class="active"><a href="all-quotes.html">All Quotes</a></li>
+                    <li class="active"><a href="#">All Quotes</a></li>
                     <li class=""><a href="#">Popular Quotes</a></li>
-                    <li class=""><a href="categories.html">Categories</a></li>
+                    <li class=""><a href="#">Categories</a></li>
                     <li class=""><a href="#">Authors</a></li>
                 </ul>
                 <ul class="social-nav">
@@ -88,7 +74,8 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </nav>
+
 
     <!-- Categories Bar -->
     <div class="categories owl-carousel">
@@ -143,6 +130,15 @@
         <li><a href="#"><img  src="resources/images/temp-images/12.png" alt="Lorem ipsum"></a></li>
         <li><a href="#"><img  src="resources/images/temp-images/13.png" alt="Lorem ipsum"></a></li>
         <li><a href="#"><img  src="resources/images/temp-images/14.png" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/6.jpg" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/7.jpg" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/8.jpg" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/9.jpg" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/10.png" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/11.png" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/12.png" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/13.png" alt="Lorem ipsum"></a></li>
+        <li><a href="#"><img  src="resources/images/temp-images/14.png" alt="Lorem ipsum"></a></li>
 <!--        <li><a href="#"><img  src="resources/images/temp-images/1.jpg" alt="Lorem ipsum"></a></li>-->
 <!--        <li><a href="#"><img  src="resources/images/temp-images/3.jpg" alt="Lorem ipsum"></a></li>-->
 <!--        <li><a href="#"><img  src="resources/images/temp-images/4.jpg" alt="Lorem ipsum"></a></li>-->
@@ -158,7 +154,18 @@
 <!--        <li><a href="#"><img  src="resources/images/temp-images/14.png" alt="Lorem ipsum"></a></li>-->
     </ul>
 
-    <a href="#" class="btn">All Quotes</a>
+        <ul class="pagination">
+            <li><a href="#">&lt;&lt;</a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">50</a></li>
+            <li><a href="#">&gt;&gt;</a></li>
+        </ul>
+
+
+
 
 
     <footer>

@@ -377,9 +377,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: gap(2) 0;
+    padding: gap(1) 0;
     #nav_open_btn svg{
         fill: $grey;
+    }
+
+    &+.nav-container{
+        margin-bottom: gap(5);
     }
 }
 
@@ -676,21 +680,27 @@ footer{
 *************************/
 
 .content{
-    margin: gap(8) 0;
+    margin: gap(10) 0;
 }
 
 .categories-grid{
-    display: grid;
+
     margin: gap(5) auto;
-    grid-template-columns: repeat(auto-fit,200px);
     max-width: $max-width;
-    grid-gap: gap(2);
+
+    //display: grid;
+    //grid-gap: gap(2);
+    //grid-template-columns: repeat(auto-fit,200px);
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
 
     .category{
         width: 200px;
         height: 200px;
+        margin: gap(1);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

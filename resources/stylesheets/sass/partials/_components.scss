@@ -88,3 +88,54 @@ a{
     }
 
 }
+
+
+
+
+
+
+
+
+
+.pagination{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+
+    a{
+        width: 24px;
+        height: 24px;
+        display: block;
+        padding:  gap(2);
+        margin: gap(1);
+        border: 2px solid $grey;
+        border-radius: 50%;
+        font-size: 1.2em;
+        text-align: center;
+        color: $grey;
+        font-weight: bold;
+        opacity: 0.7;
+
+        &.active{
+            background: $grey;
+            border: none;
+            color: $white;
+        }
+
+
+        &:hover{
+            text-decoration: none;
+            background: $primary-color-dark;
+            border-color: $primary-color-dark;
+            color: $white;
+        }
+    }
+
+}
+
+
+
+
+
