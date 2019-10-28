@@ -293,33 +293,85 @@ header {
 /************************
         Categories
 *************************/
-.categories.owl-carousel {
-  z-index: -1; }
-  .categories.owl-carousel .owl-stage-outer {
-    padding: 32px; }
-  .categories.owl-carousel .category {
-    margin: 16px;
-    padding: 20px 64px;
-    background-size: cover;
+.categories.owl-carousel .owl-stage-outer {
+  padding: 32px; }
+.categories.owl-carousel .category {
+  margin: 16px;
+  padding: 20px 64px;
+  background-size: cover;
+  border-radius: 8px;
+  z-index: 0;
+  position: relative; }
+  .categories.owl-carousel .category:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
     border-radius: 8px;
-    z-index: 0;
-    position: relative; }
-    .categories.owl-carousel .category:after {
-      content: " ";
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-      top: 0;
-      border-radius: 8px;
-      left: 0;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 1; }
-    .categories.owl-carousel .category .category-link {
-      text-decoration: none;
-      color: #fff;
-      position: relative;
-      font-weight: 600;
-      z-index: 2; }
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1; }
+  .categories.owl-carousel .category .category-link {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    z-index: 2; }
+
+/************************
+        Grid
+*************************/
+.grid {
+  max-width: 1000px;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0; }
+
+.grid li {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  padding: 8px;
+  width: 33%;
+  opacity: 0;
+  /*opacity: 1;*/ }
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1; }
+
+.grid li a,
+.grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  border-radius: 8px;
+  max-width: 100%; }
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards; }
+
+@-webkit-keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+@keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+@media screen and (max-width: 900px) {
+  .grid li {
+    width: 50%; } }
+@media screen and (max-width: 400px) {
+  .grid li {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -367,11 +367,35 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************************
         Categories
 *************************/
 .categories.owl-carousel{
-    z-index: -1;
+    //z-index: -1;
      .owl-stage-outer{
         padding: gap(4);
     }
@@ -403,5 +427,97 @@ header {
             font-weight: $font-medium;
             z-index: 2;
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************
+        Grid
+*************************/
+.grid {
+    max-width: 1000px;
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.grid li {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    padding: gap(1);
+    width: 33%;
+    opacity: 0;
+    /*opacity: 1;*/
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+    opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+    outline: none;
+    border: none;
+    display: block;
+    border-radius: gap(1);
+    max-width: 100%;
+}
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    -webkit-animation: moveUp 0.65s ease forwards;
+    animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+    0% { }
+    100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+    0% { }
+    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+
+
+@media screen and (max-width: 900px) {
+    .grid li {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid li {
+        width: 100%;
     }
 }

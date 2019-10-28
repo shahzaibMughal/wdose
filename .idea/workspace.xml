@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04c30ca7-884c-40f7-99eb-acfd4ad6ca09" name="Default Changelist" comment="" />
+    <list default="true" id="04c30ca7-884c-40f7-99eb-acfd4ad6ca09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/temp-images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/mansonry-grid/AnimOnScroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/mansonry-grid/classie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/mansonry-grid/imagesloaded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/mansonry-grid/masonry.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/mansonry-grid/modernizr.custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/stylesheets/.sass-cache/a520e52583c20c6fac6b46311f9d796b46aad7c0/main.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stylesheets/.sass-cache/a520e52583c20c6fac6b46311f9d796b46aad7c0/main.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/stylesheets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stylesheets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/stylesheets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stylesheets/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/stylesheets/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stylesheets/sass/main.scss" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +41,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+            <state relative-caret-position="262">
+              <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#svg#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -25,6 +54,7 @@
                 <element signature="n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#a#0;n#li#1;n#ul#1;n#nav#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#a#0;n#li#2;n#ul#1;n#nav#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,13 +71,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/mansonry-grid/modernizr.custom.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="728">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#758#776#0" />
                 <element signature="e#1272#1298#0" />
+                <element signature="e#1919#2312#0" />
               </folding>
             </state>
           </provider>
@@ -56,10 +92,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/stylesheets/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="375" column="22" selection-start-line="375" selection-start-column="22" selection-end-line="375" selection-end-column="22" />
+            <state relative-caret-position="208">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
-                <element signature="e#162#234#0" />
                 <element signature="e#317#356#0" />
                 <element signature="e#1021#1066#0" />
                 <element signature="e#1143#1164#0" />
@@ -132,6 +167,9 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -152,6 +190,7 @@
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <compactDirectories Scope="false" />
@@ -188,6 +227,12 @@
               <item name="C:\Users\Shahzaib\Desktop\projects\WisdomDose" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="vendor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="WisdomDose" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Shahzaib\Desktop\projects\WisdomDose" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="vendor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="mansonry-grid" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -195,14 +240,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/images/temp-images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shahzaib\Desktop\projects\WisdomDose\resources\images\temp-images" />
+      <recent name="C:\Users\Shahzaib\Desktop\projects\WisdomDose\vendor\mansonry-grid" />
       <recent name="C:\Users\Shahzaib\Desktop\projects\WisdomDose\vendor" />
       <recent name="C:\Users\Shahzaib\Desktop\projects\WisdomDose\resources\images" />
     </key>
@@ -230,12 +278,12 @@
       <option name="presentableId" value="Default" />
       <updated>1572235819525</updated>
       <workItem from="1572235821675" duration="3519000" />
-      <workItem from="1572242032789" duration="5359000" />
+      <workItem from="1572242032789" duration="7411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8878000" />
+    <option name="totallyTimeSpent" value="10930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -337,12 +385,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/mansonry-grid/modernizr.custom.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        <state relative-caret-position="262">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#svg#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -351,6 +403,7 @@
             <element signature="n#a#0;n#li#0;n#ul#1;n#nav#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#a#0;n#li#1;n#ul#1;n#nav#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#a#0;n#li#2;n#ul#1;n#nav#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -367,21 +420,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="728">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#758#776#0" />
             <element signature="e#1272#1298#0" />
+            <element signature="e#1919#2312#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/stylesheets/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="375" column="22" selection-start-line="375" selection-start-column="22" selection-end-line="375" selection-end-column="22" />
+        <state relative-caret-position="208">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
-            <element signature="e#162#234#0" />
             <element signature="e#317#356#0" />
             <element signature="e#1021#1066#0" />
             <element signature="e#1143#1164#0" />

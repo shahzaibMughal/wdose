@@ -15,17 +15,34 @@ $(document).ready(function(){
     NAV_OPEN_BTN.on('click', openNav);
     NAV_CLOSE_BTN.on('click', closeNav);
 
+    const CATEGORIES_BAR = $('.categories.owl-carousel');
+    const GRID = $('#grid');
+
     function openNav(){
         log("Opening the nav");
         MAIN_NAV.addClass(NAV_OPENING_CLASS);
+
+        CATEGORIES_BAR.css({'z-index':'-1'});   // z-index fix, detail is below
+        GRID.css({'z-index':'-1'});   // z-index fix, detail is below
     }
 
 
     function closeNav(){
         log("Closing the nav");
         MAIN_NAV.removeClass(NAV_OPENING_CLASS);
+
+        CATEGORIES_BAR.css({'z-index':'1'});   // z-index fix, detail is below
+        GRID.css({'z-index':'1'});   // z-index fix, detail is below
     }
 
+    /* z-index fix,
+        the problem when nav drawer is open,  grid & category carousel overlay the nav
+        when we fix z-index in css, then click on grid item and category item don't work
+
+        solution:
+        when nav is open, set z-index to -1 of both grid & categories carousel
+        when nav is closed, set z-index to 1 of both, that's it
+    * */
 
 
 
@@ -72,17 +89,9 @@ $(document).ready(function(){
 
 
 
-
-
-/*
-                autoWidth="true"
-              autoHeight="true"
-              :autoplay="true"
-              :autoplayTimeout="3000"
-              :responsive="{767:{items:5}}"
-
-*/
-
+    /***************************
+     *  Categories Carousel
+     ***************************/
     $('.owl-carousel').owlCarousel({
         nav:false,
         dots: false,
@@ -92,11 +101,26 @@ $(document).ready(function(){
         loop:true,
         autoplayTimeout: 3000,
         autoplayHoverPause:true,
+        responsive:{
+            767:{
+                items:5
+            }
+        }
+    });
 
-    })
 
 
 
+
+
+    /******************
+     *  Grid
+     ******************/
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+    });
 
 
 
