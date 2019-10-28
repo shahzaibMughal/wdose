@@ -745,4 +745,34 @@ footer{
     }
 }
 
+.authors-grid{
+    margin: gap(5) auto;
+    max-width: $max-width;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
+    .author{
+        margin: gap(2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .image{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .name{
+            font-size: 2em;
+        }
+        .link{
+            font-size: 1.3em;
+
+        }
+
+
+    }
+}

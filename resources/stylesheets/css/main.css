@@ -78,28 +78,44 @@ a {
   list-style: none;
   justify-content: center;
   align-items: center; }
+  .pagination li {
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin: 8px; }
+    @media (min-width: 767px) {
+      .pagination li {
+        display: block; } }
+  .pagination li:first-child, .pagination li:last-child {
+    display: block; }
   .pagination a {
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: 100%;
+    padding: 14.4px 0;
+    box-sizing: border-box;
     display: block;
-    padding: 16px;
-    margin: 8px;
-    border: 2px solid rgba(0, 0, 0, 0.7);
+    border: 2px solid #828282;
     border-radius: 50%;
     font-size: 1.2em;
     text-align: center;
-    color: rgba(0, 0, 0, 0.7);
+    color: #828282;
     font-weight: bold;
     opacity: 0.7; }
     .pagination a.active {
-      background: rgba(0, 0, 0, 0.7);
-      border: none;
+      background: #828282;
       color: #fff; }
     .pagination a:hover {
       text-decoration: none;
       background: #e01d12;
       border-color: #e01d12;
       color: #fff; }
+
+.footer-logo {
+  width: 150px;
+  margin: 16px 0; }
+  @media all and (min-width: 640px) {
+    .footer-logo {
+      width: 200px; } }
 
 html, body {
   margin: 0;
@@ -234,7 +250,7 @@ header {
     margin: 0; }
     .main-nav .social-nav svg {
       padding: 1.6px;
-      fill: rgba(0, 0, 0, 0.7); }
+      fill: #828282; }
   .main-nav.sticky {
     position: fixed;
     top: 0;
@@ -272,7 +288,7 @@ header {
       border: 1px solid rgba(0, 0, 0, 0.1);
       outline: none; }
     .main-nav #search_btn {
-      fill: rgba(0, 0, 0, 0.7);
+      fill: #828282;
       position: absolute;
       top: 8px;
       right: 5px;
@@ -375,7 +391,7 @@ header {
   flex-wrap: wrap;
   padding: 8px 0; }
   .sticky-nav #nav_open_btn svg {
-    fill: rgba(0, 0, 0, 0.7); }
+    fill: #828282; }
   .sticky-nav + .nav-container {
     margin-bottom: 40px; }
 
@@ -587,5 +603,27 @@ footer {
       color: #fff;
       position: relative;
       z-index: 10; }
+
+.authors-grid {
+  margin: 40px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .authors-grid .author {
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .authors-grid .author .image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; }
+    .authors-grid .author .name {
+      font-size: 2em; }
+    .authors-grid .author .link {
+      font-size: 1.3em; }
 
 /*# sourceMappingURL=main.css.map */
